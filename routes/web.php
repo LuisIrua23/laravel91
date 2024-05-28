@@ -22,8 +22,7 @@ Route::get('login',[LoginController::class,'iniciar']);
 Route::post('login/store',[LoginController::class,'store'])->name('login.store');
 
 
-Route::get('usuario/asociar_rol',[RoleUserController::class,'asociar']);
-Route::post('usuario/asociar_rol/store',[RoleUserController::class,'store'])->name('role_user.store');
+
 
 //modulo
 Route::get('module/listar',[ModuleController::class,'listar'])->name('module.listar');
